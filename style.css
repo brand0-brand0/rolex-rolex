@@ -8,7 +8,7 @@ body {
 }
 
 img#draggableImage {
-    width: 75%;
-    max-width: 75%;
+    width: 25%; /* Adjusted from 75% to 25% */
+    max-width: 25%;
     cursor: grab; /* Changes the cursor to indicate the image can be grabbed */
 }
