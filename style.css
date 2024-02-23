@@ -7,10 +7,11 @@ html, body {
     justify-content: center; /* Centers content horizontally */
     align-items: center; /* Centers content vertically */
     background-color: white; /* Sets the background color to white */
+    overflow: hidden; /* Prevents any scrollbars from appearing */
 }
 
 img#centeredImage {
-    max-width: 1%; /* Significantly reduces the image size for a pendant-like appearance */
-    max-height: 1%; /* Ensures the image height is also reduced and proportional */
-    object-fit: contain; /* Maintains the image's aspect ratio */
+    width: 50px; /* Sets a fixed width to make the image small */
+    height: auto; /* Maintains the image's aspect ratio */
+    object-fit: contain; /* Ensures the full image is visible and retains its aspect ratio */
 }
