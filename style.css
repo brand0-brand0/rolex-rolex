@@ -10,7 +10,7 @@ html, body {
 }
 
 img#centeredImage {
-    max-width: 60%; /* Significantly reduces the image size for a pendant-like appearance */
-    max-height: 60%; /* Ensures the image height is also reduced and proportional */
+    max-width: 200%; /* Significantly reduces the image size for a pendant-like appearance */
+    max-height: 200%; /* Ensures the image height is also reduced and proportional */
     object-fit: contain; /* Maintains the image's aspect ratio */
 }
