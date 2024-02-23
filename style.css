@@ -11,6 +11,6 @@ html, body {
 }
 
 img#centeredImage {
-    width: 350px; /* Example of a larger fixed width */
+    width: 450px; /* Example of a larger fixed width */
     height: auto; /* Continues to maintain aspect ratio */
     object-fit: contain; /* Ensures the image fits within the given dimensions without distortion */
