@@ -5,12 +5,12 @@ body {
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
     height: 100vh; /* Ensures the body takes at least the full height of the viewport */
-    padding: 20px; /* Adds some padding around the content to ensure it doesn't touch the edges */
-    box-sizing: border-box; /* Ensures padding is included in the total height/width calculation */
+    padding: 20px; /* Adds padding around the content */
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
 }
 
 img#centeredImage {
-    max-width: 80vw; /* Adjusts the maximum width to 80% of the viewport width */
-    max-height: 80vh; /* Adjusts the maximum height to 80% of the viewport height */
-    object-fit: contain; /* Ensures the image is scaled to maintain its aspect ratio without cropping */
+    max-width: calc(100vw - 40px); /* Subtracts padding from the viewport width */
+    max-height: calc(100vh - 40px); /* Subtracts padding from the viewport height */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
