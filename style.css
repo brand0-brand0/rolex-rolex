@@ -1,22 +1,16 @@
 html, body {
-    width: 100%; /* Ensures the body and html tags don't exceed the viewport width */
-    height: 100%; /* Sets the height to fill the viewport */
+    width: 100%; /* Ensures the body and html tags fill the viewport width */
+    height: 100%; /* Ensures they fill the viewport height */
     margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding for html */
-    overflow: hidden; /* Prevents scrollbars from appearing */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Enables flexbox layout for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
     background-color: white; /* Sets the background color to white */
 }
 
-body {
-    display: flex; /* Enables flexbox layout */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    padding: 20px; /* Adds padding around the content, affecting the inner content size */
-    box-sizing: border-box; /* Includes padding in the element's total dimensions */
-}
-
 img#centeredImage {
-    max-width: calc(100vw - 42px); /* Further reduces the maximum width to account for padding and potential scrollbar space */
-    max-height: calc(100vh - 42px); /* Further reduces the maximum height to ensure it fits without scrolling */
-    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    max-width: 20%; /* Significantly reduces the image size for a pendant-like appearance */
+    max-height: 20%; /* Ensures the image height is also reduced and proportional */
+    object-fit: contain; /* Maintains the image's aspect ratio */
 }
