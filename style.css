@@ -11,7 +11,7 @@ html, body {
 }
 
 img#centeredImage {
-    width: 100px; /* Sets a fixed width to make the image small */
+    width: 1000px; /* Sets a fixed width to make the image small */
     height: auto; /* Maintains the image's aspect ratio */
     object-fit: contain; /* Ensures the full image is visible and retains its aspect ratio */
 }
