@@ -1,19 +1,17 @@
-/* Styles for the body element to set up the background color and align content */
+/* Style for the body to ensure full viewport height and white background */
 body {
-    background-color: white; /* Sets the background of the entire page to white */
-    margin: 0; /* Removes default margin around the body */
-    padding: 0; /* Removes default padding around the body */
-    display: flex; /* Enables Flexbox layout to help center the content */
-    justify-content: center; /* Centers content horizontally in the viewport */
-    align-items: center; /* Centers content vertically in the viewport */
-    height: 100vh; /* Sets the height of the body to fill the entire viewport height */
+    background-color: white; /* Sets the background color to white */
+    margin: 0; /* Removes the default margin */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    padding: 20px; /* Adds some padding around the content to ensure it doesn't touch the edges */
 }
 
-/* Styles for the draggable image */
-img#draggableImage {
-    max-width: 300px; /* Sets the maximum width of the image to 300 pixels */
-    max-height: 300px; /* Sets the maximum height of the image to 300 pixels */
-    cursor: grab; /* Changes the cursor to a grab hand to indicate the image can be grabbed */
-    height: auto; /* Ensures the height adjusts automatically to maintain the aspect ratio */
-    /* Note: Since max-width and max-height are used, the actual width and height may be less than 300px if necessary to maintain the aspect ratio or to fit within the viewport. */
+/* Style for the image to ensure it scales properly without exceeding the viewport dimensions */
+img#centeredImage {
+    max-width: 100%; /* Ensures the image width does not exceed the viewport's width */
+    max-height: 100vh; /* Ensures the image height does not exceed the viewport's height */
+    object-fit: contain; /* Ensures the image is scaled to maintain its aspect ratio without cropping */
 }
