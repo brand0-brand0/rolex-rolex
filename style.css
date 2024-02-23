@@ -1,17 +1,16 @@
-/* Style for the body to ensure full viewport height and white background */
 body {
     background-color: white; /* Sets the background color to white */
     margin: 0; /* Removes the default margin */
     display: flex; /* Enables flexbox layout */
     justify-content: center; /* Centers the content horizontally */
     align-items: center; /* Centers the content vertically */
-    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    height: 100vh; /* Ensures the body takes at least the full height of the viewport */
     padding: 20px; /* Adds some padding around the content to ensure it doesn't touch the edges */
+    box-sizing: border-box; /* Ensures padding is included in the total height/width calculation */
 }
 
-/* Style for the image to ensure it scales properly without exceeding the viewport dimensions */
 img#centeredImage {
-    max-width: 100%; /* Ensures the image width does not exceed the viewport's width */
-    max-height: 100vh; /* Ensures the image height does not exceed the viewport's height */
+    max-width: 80vw; /* Adjusts the maximum width to 80% of the viewport width */
+    max-height: 80vh; /* Adjusts the maximum height to 80% of the viewport height */
     object-fit: contain; /* Ensures the image is scaled to maintain its aspect ratio without cropping */
 }
